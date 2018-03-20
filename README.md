@@ -1,6 +1,6 @@
 # TikZ Physics
 
-A collection of [TikZ](https://en.wikipedia.org/wiki/PGF/TikZ) examples for particle physics related images.
+A collection of [TikZ](https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ) examples for particle physics related images.
 
 ## Acknowledgements
 
