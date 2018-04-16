@@ -1,3 +1,4 @@
+\RequirePackage{luatex85}
 \documentclass[tikz, border=10pt]{standalone}
 
 \usepackage[compat=1.1.0]{tikz-feynman}
@@ -28,11 +29,11 @@
   \vertex [above left=0.20cm and 2.3cm of ISR] (q1) {\(\bar{q}\)};
   \vertex [below left=0.20cm and 2.3cm of ISR] (q2) {\(q\)};
   \diagram* {
-   (origin) -- [scalar, momentum'={}, style={pos=0.2}] (X) -- [anti fermion] (b1),
-   (X) -- [fermion] (b2),
-   (origin) -- [gluon, momentum={}] (ISR),
-   (ISR) -- [anti fermion] (q1),
-   (ISR) -- [fermion] (q2),
+  (origin) -- [scalar, momentum'={}, style={pos=0.2}] (X) -- [anti fermion] (b1),
+  (X) -- [fermion] (b2),
+  (origin) -- [gluon, momentum={}] (ISR),
+  (ISR) -- [anti fermion] (q1),
+  (ISR) -- [fermion] (q2),
   };
  \end{feynman}
 \end{tikzpicture}
