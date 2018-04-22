@@ -26,20 +26,14 @@
   \vertex [above right=0.20cm and 2.3cm of X] (b1) {\(\bar{b}\)};
   \vertex [below right=0.20cm and 2.3cm of X] (b2) {\(b\)};
   \vertex [left=1cm of origin, label={[xshift=0.5cm, yshift=0.15cm]ISR}] (ISR);
-  \vertex [above left=0.20cm and 2.3cm of ISR] (q1);
-  \vertex [below left=0.20cm and 2.3cm of ISR] (q2);
-  \vertex [above left=0.40cm and 2.5cm of ISR] (q3);
-  \vertex [below left=0.40cm and 2.1cm of ISR] (q4);
-  \vertex [above left=0.05cm and 2.0cm of ISR] (q5);
+  \vertex [above left=0.20cm and 2.3cm of ISR] (q1) {\(\bar{q}\)};
+  \vertex [below left=0.20cm and 2.3cm of ISR] (q2) {\(q\)};
   \diagram* {
   (origin) -- [scalar, momentum'={}, style={pos=0.2}] (X) -- [anti fermion] (b1),
   (X) -- [fermion] (b2),
   (origin) -- [gluon, momentum={}] (ISR),
-  (ISR) -- (q1),
-  (ISR) -- (q2),
-  (ISR) -- (q3),
-  (ISR) -- (q4),
-  (ISR) -- (q5),
+  (ISR) -- [anti fermion] (q1),
+  (ISR) -- [fermion] (q2),
   };
  \end{feynman}
 \end{tikzpicture}
